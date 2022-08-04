@@ -3,7 +3,7 @@
 
 /* ...................................................Medium Style ........................................................................*/
 #startOrder {
-    margin-top: 60px;
+    margin-top: 100px;
     text-align: center;
     background-color: #212529;
     display: flex;
@@ -25,7 +25,8 @@
 }
 
 #startOrder button {
-    background-color: #e4002b;;
+    background-color: #e4002b;
+    ;
     color: white;
     padding: 1rem 3rem;
     font-size: 14px;
@@ -47,7 +48,8 @@
     background-repeat: no-repeat;
 
 }
-#dealsOffers>p{
+
+#dealsOffers>p {
     font-family: "National 2 Condensed";
     color: #fff;
     font-style: normal;
@@ -82,7 +84,7 @@
     font-size: 25px;
     padding-bottom: 50px;
     font-weight: bolder;
-    
+
 }
 
 #innerNational>p>a {
@@ -98,31 +100,34 @@
     gap: 15px;
     border-radius: 10px;
     margin: auto;
-
 }
 
 
 #deals>div {
     border-radius: 15px;
     text-align: center;
-    overflow: hidden;
-    height: 400px;
+
+    height: 370px;
     width: 290px;
-    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 
 #deals>div:nth-child(1) {
     background: url("https://online.kfc.co.in/static/media/Native_select%20a%20kfc_grey%20image.6e97ff02.svg");
-    color: white;
-    position: relative;
-    z-index: -2;
     background-size: 100%;
+    overflow: hidden;
     background-repeat: no-repeat;
-    font-size: 22px;
-    text-align: center;
-    padding-top: 40%;
-    padding-left: 5%;
-    padding-right: 5%;
+    box-shadow: none;
+    
+    border-radius: 15px;
+    
+}
+
+#deals>div:nth-child(1)>h3 {
+    color: white;
+    font-size: 25px;
+    margin: 150px 5px 20px 5px;
 }
 
 #deals>div:nth-child(1) button {
@@ -141,20 +146,22 @@
 
 #deals>div:nth-child(2) {
     background-color: #E4002b;
+    font-size: 25px;
+}
+
+#deals>div:nth-child(2) h3 {
     color: white;
     text-align: center;
-
-    font-size: 25px;
-    padding: 30px 10px;
+    margin: 30px 10px;
 }
 
 #deals>div:nth-child(2) button {
     background-color: #E4002b;
     color: whitesmoke;
-    font-size: 25px;
+    font-size: 15px;
     border: 1px solid whitesmoke;
     padding: 10px 40px;
-    margin-top: 7%;
+    margin-top: 10px;
     border-radius: 30px;
 }
 
@@ -173,22 +180,24 @@
 
 #deals div h4 {
     font-size: 30px;
+    font-weight: 900;
     color: #E4002b;
     margin: 0px 0px 5px 5px;
 
 }
 
 #deals div p {
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
-    padding: 4px;
+    margin: auto;
 }
 
 #deals>div div {
     display: flex;
     justify-content: space-around;
     color: black;
-    margin-bottom: 45px;
+    font-weight: bolder;
+    margin: 5px 20px 20px 10px;
 }
 
 #deals>div div button {
@@ -197,11 +206,11 @@
     border-radius: 20px;
     border: 1px solid black;
     background-color: white;
-    font-weight: 500;
+    font-weight: bold;
     cursor: pointer;
     color: black;
     font-size: 14px;
-    margin-top: 15px;
+
 }
 
 #deals>div div button:hover {
@@ -267,6 +276,7 @@ ul {
     margin-left: -0.5%;
     padding: 70px 0;
     display: flex;
+    color: aliceblue;
 }
 
 .footer-col {
@@ -289,7 +299,7 @@ ul {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: orange;
+    
     height: 2px;
     box-sizing: border-box;
     width: px;
@@ -310,8 +320,7 @@ ul {
 }
 
 .footer-col ul li a:hover {
-    color: rgb(255, 242, 218);
-    padding-left: 8px;
+    color:white;
 }
 
 .playstore {
@@ -339,8 +348,7 @@ ul {
 }
 
 .foot-col-sol .social-links a:hover {
-    color: grey;
-    background-color: rgb(255, 255, 255);
+    color: white
 }
 
 .foot-col-sol {
@@ -357,6 +365,7 @@ ul {
 
 .fa-solid {
     color: red;
+    margin-right: 10px;
 }
 
 .footer-col>#underline a {
