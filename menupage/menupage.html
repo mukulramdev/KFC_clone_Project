@@ -5,63 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>menu page</title>
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./footer.css">
     <style>
-        /*-----------------nevbar section start here----------*/
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-            font-stretch: extra-condensed;
-            font-weight:bold;
-        }
-        /* __Nav__ */
-        #nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border: none;
-            height: 100px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: #fff;
-            z-index: 100;
-        }
-        #nav>div{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            gap:30px;
-
-        }
-        .bucket{
-            height: 60px;
-            margin-left: -30px;
-        }
-        #firstHalf{
-            margin-left: -50px;
-        }
-        #firstHalf p{
-            font-weight: bold;
-        }
-        #secondHalf h4{
-            margin-left: -20px;
-        }
-        #secondHalf div{
-            display: flex;
-            gap:30px;
-            padding-right:20px ;
-            border-right: 1px solid rgb(192, 102, 102);
-        }
-        #rupee{
-            color: rgb(98, 92, 92);
-            font-size: smaller;
-        }
-
         
-
-        /*-----------------nevbar section ends here-----------*/
         #container{
             display: grid;
             grid-template-columns: repeat(4,1fr);
@@ -134,21 +81,7 @@
 </head>
 <body>
     <!------------nevbar section start here---------------------->
-    <div id="nav">
-        <div id="firstHalf">
-            <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg">
-            <p>Menu</p>
-            <p>Deals</p>
-        </div>
-        <div id="secondHalf">
-            <div>
-                <img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg">
-                <h4>Sign In</h4>
-            </div>    
-            <p id="rupee">&#8377; 0</p>
-            <img class="bucket" src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg">
-        </div>
-    </div>
+    <div id="navbar"></div>
     <!------------nev bar section ends here---------------------->
 
     <div id="container">
@@ -218,6 +151,7 @@
 
         </div>
     </div>
+    <div id="footer"></div>
 </body>
 </html>
 <script>
@@ -466,4 +400,11 @@
         }
        
     }
+</script>
+<script type="module">
+    import {footer,navbar}from "./common.js "
+var footery=document.getElementById("footer")
+footery.innerHTML=footer()
+var navy=document.getElementById("navbar")
+navy.innerHTML=navbar()
 </script>

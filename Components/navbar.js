@@ -2,7 +2,7 @@ function navbar(){
     return `<div id="nav">
     <div id="firstHalf">
         <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg">
-        <p>Menu</p>
+        <a href="./menupage/menupage.html"><p>Menu</p></a>
         <p>Deals</p>
     </div>
     <div id="secondHalf">
