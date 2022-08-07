@@ -40,3 +40,55 @@
     color: rgb(98, 92, 92);
     font-size: smaller;
 }
+
+
+
+#header-pic{
+display: none;
+}
+#resNav{
+display: none;
+}
+@media only screen and (max-width: 570px){
+#header-pic{
+display: flex;
+height:80px;
+}
+#header-pic img{
+width: 100%;
+object-fit: cover;
+}
+#nav{
+display: none;
+}
+#resNav{
+display: flex;
+justify-content: space-around;
+align-items: center;
+background: #fff;
+z-index: 100;
+position: sticky;
+left: 0;
+top: 0;
+}
+.toggle-btn{
+width: 20px;
+height: 10px;
+position: relative;
+cursor: pointer;
+}
+.toggle-btn span{
+position: absolute;
+width: 100%;
+height: 2px;
+top: 50%;
+transform: translate(-50%);
+background: #979797;
+}
+.toggle-btn span:nth-child(1){
+top:0;
+}
+.toggle-btn span:nth-child(3){
+top:100%;
+}
+
