@@ -53,6 +53,7 @@ function footer(){
 
 function navbar(){
     return `
+     <div id="header-pic"><img src="https://images.ctfassets.net/wtodlh47qxpt/7aV9O0UN4Qq2GY2RBpsGNj/8e844fa7f19eb224b01ea6db475c8f50/FREE_ZINGER_375x121px.jpg"></div>
      <div id="resNav">
         <div class="toggle-btn">
             <span></span>
