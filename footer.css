@@ -1,6 +1,6 @@
-/* footer {
+footer {
     margin-top: 30px;
-} */
+}
 
 .container {
     max-width: 60%;
@@ -31,6 +31,7 @@ ul {
     margin-left: -0.5%;
     padding: 70px 0;
     display: flex;
+    color: aliceblue;
 }
 
 .footer-col {
@@ -53,7 +54,7 @@ ul {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: orange;
+    
     height: 2px;
     box-sizing: border-box;
     width: px;
@@ -74,8 +75,7 @@ ul {
 }
 
 .footer-col ul li a:hover {
-    color: rgb(255, 242, 218);
-    padding-left: 8px;
+    color:white;
 }
 
 .playstore {
@@ -103,8 +103,7 @@ ul {
 }
 
 .foot-col-sol .social-links a:hover {
-    color: grey;
-    background-color: rgb(255, 255, 255);
+    color: white
 }
 
 .foot-col-sol {
@@ -121,6 +120,7 @@ ul {
 
 .fa-solid {
     color: red;
+    margin-right: 10px;
 }
 
 .footer-col>#underline a {
