@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background: rgb(245, 238, 238);
+            border: none;
+            border-bottom: 1px solid rgb(206, 186, 186);
+        }
+        #nav button{
+            width: 120px;
+            height: 40px;
+            background: black;
+            color: #fff;
+            border-radius: 12rem;
+            cursor: pointer;
+        }
+        #navLast{
+            display: flex;
+            justify-content: space-around;
+            justify-content: center;
+            gap: 20px;
+        }
+        #thirdDiv{
+            height: 100px;
+            background: #9797971c;
+            display: flex;
+            flex-direction: row;
+        }
+        #third{
+            width: 30px;
+            position: relative;
+            cursor: pointer;
+            background: transparent;
+            margin-left:200px;
+        }
+        #third span{
+            position: absolute;
+            width:7px;
+            height: 20px;
+            left:50%;
+            /* transform: translate(-50%); */
+            background: #cc1010;
+        }
+        #third span:nth-child(1){
+            left:0;
+            color: black;
+        }
+        #third span:nth-child(3){
+            left:100%;
+            color: black;
+        }
+        
+        #low{
+            display: flex;
+            align-items: center;
+            margin-left: -40px;
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+            font-weight:bold;
+        }  
+        #thirdDiv>div:last-child p{
+            margin-left:220px;
+        }
+
+        /* Main Content */
+
+        #main{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 30px;
+        }
+
+        #address{
+            width: 500px;
+            height: 200px;
+            background: rgb(225, 210, 210);
+            border: 1px solid rgb(230, 209, 209);
+            /* margin-left:180px; */
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 30px;
+        }
+        #address a{
+            color: black;
+            padding-left: 90px;
+        }
+        #address p{
+            padding-bottom: 10px;
+        }
+       #lastP{
+        padding-top: 50px;
+       }
+       /* 2nd div total */
+
+       #total{
+        position: relative;
+        height: 200px;
+        width: 300px;
+        background: rgb(255, 255, 255);
+        box-shadow: 2px 2px 10px gray;
+        border-radius: 3%;
+        padding: 5px;
+        position: relative;
+       }
+       #total>div>div{
+        padding: 8px 0;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+       }
+       /* .to{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        color: rgb(97, 95, 95);
+       } */
+       #pay{
+        width:90%;
+        margin-left: 3%;
+        height: 30px;
+        border:none;
+        border-radius: 12rem;
+        background: rgb(205, 52, 52);
+        color: #fff;
+        position: absolute;
+        cursor: pointer;
+        bottom: 10px;
+       }
+       #pay:hover{
+        background: black;
+        columns: white;
+        box-shadow: 1px 1px 5px gray;
+       }
+       #pay>div{
+        height: 30px;
+        box-shadow: 1px 1px 5px gray;
+       }
+
+
+
+
+
+legend {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  padding: 0;
+  color: #da0000;
+}
+
+input {
+  border: 0;
+  color: inherit;
+  font: inherit;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+#total input[type="radio"]{
+  accent-color: #fc8080;
+  accent-color: var(--color-primary);
+}
+
+
+
+
+
+
+
+       @media only screen and (max-width: 770px){
+        #nav{
+            justify-content: space-between;
+            padding: 2px 20px;
+        }
+        #nav>div:last-child{
+            display: none;
+        }
+
+
+        #thirdDiv>div:last-child p{
+            margin-left:80px;
+        }
+        #thirdDiv>div{
+            margin-left: 20px;
+        }
+
+        #address{
+           width: auto;
+           padding: 30px;
+            position: absolute;
+            margin-top: 20px;
+            left: calc(50vw-width);
+           
+        } 
+
+        #total{
+                position: absolute;
+                margin-top: 250px;
+                left: calc(50vw-width);
+
+        }
+
+       } 
+
+
+       @media only screen and (max-width: 570px){
+       
+        #thirdDiv>div:last-child p{
+            margin-left:30px;
+        }
+        #thirdDiv>div{
+            margin-left: 10px;
+        }
+
+       }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <button>Back to cart</button>
+        <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg">
+        <div id="navLast">
+            <p>Need Help?</p>
+            <div>
+            <img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg">
+            <h4 id="head4" style="display: inline-block;position: absolute;top:25px;">&emsp;Sign In</h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="thirdDiv">
+        <div id="third">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div id="low">
+            <div><h1>CHECKOUT</h1></div>
+            <div><p><i class="fa-solid fa-lock"></i>&emsp;Secure Checkout</p></div>
+        </div>
+        
+    </div>    
+
+    <div id="main">
+        <div id="address">
+            <div><h3>PICK UP INFO</h3></div>
+            <div>
+                <p><i class="fa-solid fa-location-dot"></i>&emsp;Uganda <a href="#">Change</a></p> 
+                <p>Plot No.:108,Near to Jungle</p>
+                <p id="lastP"><i class="fa-solid fa-clock"></i>&emsp;Asap</p>
+            </div>
+        </div>
+
+        <div id="total">
+            <!-- <div id="totally">
+                <div><h2>1 item</h2></div> 
+                <div class="to">
+                    <p>Subtotal</p>
+                    <p>200</p>
+                </div>
+                
+            </div>  
+            <button id="pay">Continue to Payment </button>   -->
+           
+                <legend>Payment Method</legend>
+          
+                <div class="form__radios">
+                   <div>
+                    <label>Visa Payment</label>
+                    <input checked id="visa" name="payment-method" type="radio" />
+                   </div>
+          
+                  <div>
+                    <label>PayPal</label>
+                    <input id="paypal" name="payment-method" type="radio" />
+                  </div>
+          
+                  <div>
+                    <label>Master Card</label>
+                    <input id="mastercard" name="payment-method" type="radio" />
+                  </div>
+                  <div>
+                    <label>Card No.</label>
+                    <input id="mastercard" placeholder="Card Number" type="number" />
+                  </div>
+                  <div>
+                     <div><label>CVV</label>  <input id="mastercard" type="number" /></div>  
+                  </div>
+                </div>
+                <button id="pay">Pay</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/e1c0e81e9a.js" crossorigin="anonymous"></script>
+<script>
+    var arr=JSON.parse(localStorage.getItem(arr));
+
+
+</script>
