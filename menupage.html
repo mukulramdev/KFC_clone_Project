@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu page</title>
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./footer.css">
+    <style>
+        
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+
+            gap: 30px;
+            margin-top: 100px;
+        }
+        #sideBar{
+            grid-column: 1/2;
+            position: fixed;
+            padding: 0px 50px; 
+        }
+        #sideBar button{
+           border: none;
+           font-size: 20px;
+           margin-top: 15px;
+           background:white;
+
+        }
+        #main{
+            grid-column: 2/5;
+            padding-right: 100px;
+        }
+        #main>div>h1{
+            margin: 30px 0px;
+        }
+        #main>div>div{
+            display: grid;
+           grid-template-columns: repeat(3,1fr);
+            
+        }
+        #main>div>div>div{
+           margin: 5px;
+           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+           position:relative;
+           padding: 10px;
+           padding-bottom: 100px;
+           border-radius: 10px;
+        }
+        #main>div>div>div>img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        #main>div>div>div>p{
+            text-align:justify;
+            margin-top: 10px;
+        }
+        #main>div>div>div>p:nth-child(4){
+            text-align:justify;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        #main>div>div>div>button{
+            font-size: 15px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            padding: 15px 50px;
+            border-radius: 30px;
+            border: 0px;
+            background-color: rgb(231, 12, 12);
+            color: white; 
+            position: absolute;
+            top: 425px;   
+        }
+        #main>div>div>div>button:hover{
+            background-color: rgb(245, 63, 63);
+        }
+    </style>
+</head>
+<body>
+    <!------------nevbar section start here---------------------->
+    <div id="navbar"></div>
+    <!------------nev bar section ends here---------------------->
+
+    <div id="container">
+        <div id="sideBar">
+          <div>
+           <img src="https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg" alt="image">
+           <h1>KFC MENU</h1>
+           <h3><button onclick="fun1('1')">Hot Deals</button></h3>
+           <h3><button onclick="fun1('2')">Chicken Buckets</button></h3>
+           <h3><button onclick="fun1('3')">Hot Launches</button></h3>
+           <h3><button onclick="fun1('4')">Box Meals</button></h3>
+           <h3><button onclick="fun1('5')">Burgers</button></h3>
+           <h3><button onclick="fun1('6')">Biryani Buckets</button></h3>
+           <h3><button onclick="fun1('7')">Snack</button></h3>
+           <h3><button onclick="fun1('8')">Beverages and Desserts</button></h3>
+        </div>
+        </div>
+        <div id="main">
+              <div id="hotDeal">
+                <h1>HOT DEALS</h1>
+                <div id="hotDealContainer">
+
+                </div>
+              </div>
+              <div id="chickenBucket">
+                <h1>CHICKEN BUCKET</h1>
+                <div id="chickenBucketContainer">
+                    
+                </div>
+              </div>
+              <div id="hotLaunches">
+                <h1>HOT LAUNCHES</h1>
+                <div id="hotLaunchesContainer">
+                    
+                </div>
+              </div>
+              <div id="BoxMeals">
+                <h1>BOX MEALS</h1>
+                <div id="BoxMealsContainer">
+                    
+                </div>
+              </div>
+              <div id="burger">
+                <h1>BURGER</h1>
+                <div id="burgerContainer">
+                    
+                </div>
+              </div>
+              <div id="biryaniBucket">
+                <h1>BIRYANI BUCKET</h1>
+                <div id="biryaniBucketContainer">
+                    
+                </div>
+              </div>
+              <div id="snackes">
+                <h1>SNACKES</h1>
+                <div id="snackesContainer">
+                    
+                </div>
+              </div>
+              <div id="beveragesAndDesserts">
+                <h1>BERVERAGES AND DESSERTS</h1>
+                <div id="beveragesAndDessertsContainer">
+                    
+                </div>
+              </div>
+
+        </div>
+    </div>
+    <a href=""></a>
+    <div id="footer"></div>
+</body>
+</html>
+<script>
+    let localStorageItemList=JSON.parse(localStorage.getItem("localStorageItemList"))||[];
+    let url="http://localhost:3000/foodData";
+    async function init(){
+        let data=await fetch(" http://localhost:3000/foodData");
+        let res=await data.json();
+        console.log(res)
+        /*-----hot deal data section-------*/
+        let hotDealData=res.hotDeals;
+        let hotDealContainer=document.getElementById("hotDealContainer");
+        hotDealData.forEach(data => {
+            let image=document.createElement("img");
+            image.src=data.image;
+            let title=document.createElement("h3");
+            title.innerText=data.title;
+            let category=document.createElement("p");
+            category.innerText=data.category;
+            let price=document.createElement("p");
+            price.innerText="price :₹"+data.price;
+            let para=document.createElement("p");
+            para.innerText=data.para;
+            let button=document.createElement("button");
+            button.innerText="add to cart";
+            button.onclick=function(){
+               localStorageItemList.push(data);
+               localStorage.setItem("localStorageItemList",JSON.stringify(localStorageItemList))
+               alert("item added to the cart successfully")
+            }
+            let div=document.createElement("div");
+            div.append(image,title,category,price,para,button);
+            hotDealContainer.append(div);
+        });
+        /*-------chicken buckert section--------*/
+        let chickenBucketsData=res.chickenBuckets;
+        let chickenBucketContainer=document.getElementById("chickenBucketContainer");
+        chickenBucketsData.forEach(data => {
+            let image=document.createElement("img");
+            image.src=data.image;
+            let title=document.createElement("h3");
+            title.innerText=data.title;
+            let category=document.createElement("p");
+            category.innerText=data.category;
+            let price=document.createElement("p");
+            price.innerText="price :₹"+data.price;
+            let para=document.createElement("p");
+            para.innerText=data.para;
+            let button=document.createElement("button");
+            button.innerText="add to cart";
+            button.onclick=function(){
+               localStorageItemList.push(data);
+               localStorage.setItem("localStorageItemList",JSON.stringify(localStorageItemList))
+               alert("item added to the cart successfully")
+            }
+            let div=document.createElement("div");
+            div.append(image,title,category,price,para,button);
+            chickenBucketContainer.append(div);
+        });
+
+        /*--------------------------- hot lunches------------*/
+        let hotLaunchesData=res.hotLaunches;
+        let hotLaunchesContainer=document.getElementById("hotLaunchesContainer");
+        hotLaunchesData.forEach(data => {
+            let image=document.createElement("img");
+            image.src=data.image;
+            let title=document.createElement("h3");
+            title.innerText=data.title;
+            let category=document.createElement("p");
+            category.innerText=data.category;
+            let price=document.createElement("p");
+            price.innerText="price :₹"+data.price;
+            let para=document.createElement("p");
+            para.innerText=data.para;
+            let button=document.createElement("button");
+            button.innerText="add to cart";
+            button.onclick=function(){
+               localStorageItemList.push(data);
+               localStorage.setItem("localStorageItemList",JSON.stringify(localStorageItemList))
+               alert("item added to the cart successfully")
+            }
+            let div=document.createElement("div");
+            div.append(image,title,category,price,para,button);
+            hotLaunchesContainer.append(div);
+        });
+
+        /*------------------------------------box meals ------------------------*/
+        let boxMealsData=res.boxMeals;
+        let BoxMealsContainer=document.getElementById("BoxMealsContainer");
+        boxMealsData.forEach(data => {
+            let image=document.createElement("img");
+            image.src=data.image;
+            let title=document.createElement("h3");
+            title.innerText=data.title;
+            let category=document.createElement("p");
+            category.innerText=data.category;
+            let price=document.createElement("p");
+            price.innerText="price :₹"+data.price;
+            let para=document.createElement("p");
+            para.innerText=data.para;
+            let button=document.createElement("button");
+            button.innerText="add to cart";
+            button.onclick=function(){
+               localStorageItemList.push(data);
+               localStorage.setItem("localStorageItemList",JSON.stringify(localStorageItemList))
+               alert("item added to the cart successfully")
+            }
+            let div=document.createElement("div");
+            div.append(image,title,category,price,para,button);
+            BoxMealsContainer.append(div);
+        });
+        /*-------------------------burger section start here  --------*/
+        let burgerData=res.burgers;
+        let burgerContainer=document.getElementById("burgerContainer");
+        burgerData.forEach(data => {
+            let image=document.createElement("img");
+            image.src=data.image;
+            let title=document.createElement("h3");
+            title.innerText=data.title;
+            let category=document.createElement("p");
+            category.innerText=data.category;
+            let price=document.createElement("p");
+            price.innerText="price :₹"+data.price;
+            let para=document.createElement("p");
+            para.innerText=data.para;
+            let button=document.createElement("button");
+            button.innerText="add to cart";
+            button.onclick=function(){
+               localStorageItemList.push(data);
+               localStorage.setItem("localStorageItemList",JSON.stringify(localStorageItemList))
+               alert("item added to the cart successfully")
+            }
+            let div=document.createElement("div");
+            div.append(image,title,category,price,para,button);
+            burgerContainer.append(div);
+        });
+
+        /*---------------------biryani bucket ------------------*/
+        let biryaniBucketsData=res.biryaniBuckets;
+        let biryaniBucketContainer=document.getElementById("biryaniBucketContainer");
+        biryaniBucketsData.forEach(data => {
+            let image=document.createElement("img");
+            image.src=data.image;
+            let title=document.createElement("h3");
+            title.innerText=data.title;
+            let category=document.createElement("p");
+            category.innerText=data.category;
+            let price=document.createElement("p");
+            price.innerText="price :₹"+data.price;
+            let para=document.createElement("p");
+            para.innerText=data.para;
+            let button=document.createElement("button");
+            button.innerText="add to cart";
+            button.onclick=function(){
+               localStorageItemList.push(data);
+               localStorage.setItem("localStorageItemList",JSON.stringify(localStorageItemList))
+               alert("item added to the cart successfully")
+            }
+            let div=document.createElement("div");
+            div.append(image,title,category,price,para,button);
+            biryaniBucketContainer.append(div);
+        });
+        
+        /*---------------------------snacks ---------------------*/
+        let SnackData=res.Snack;
+        let snackesContainer=document.getElementById("snackesContainer");
+        SnackData.forEach(data => {
+            let image=document.createElement("img");
+            image.src=data.image;
+            let title=document.createElement("h3");
+            title.innerText=data.title;
+            let category=document.createElement("p");
+            category.innerText=data.category;
+            let price=document.createElement("p");
+            price.innerText="price :₹"+data.price;
+            let para=document.createElement("p");
+            para.innerText=data.para;
+            let button=document.createElement("button");
+            button.innerText="add to cart";
+            button.onclick=function(){
+               localStorageItemList.push(data);
+               localStorage.setItem("localStorageItemList",JSON.stringify(localStorageItemList))
+               alert("item added to the cart successfully")
+            }
+            let div=document.createElement("div");
+            div.append(image,title,category,price,para,button);
+            snackesContainer.append(div);
+        });
+
+        /*--------------------------dessert section---------*/
+        let beveragesAndDessertsData=res.beveragesAndDesserts;
+        let beveragesAndDessertsContainer=document.getElementById("beveragesAndDessertsContainer");
+        beveragesAndDessertsData.forEach(data => {
+            let image=document.createElement("img");
+            image.src=data.image;
+            let title=document.createElement("h3");
+            title.innerText=data.title;
+            let category=document.createElement("p");
+            category.innerText=data.category;
+            let price=document.createElement("p");
+            price.innerText="price :₹"+data.price;
+            let para=document.createElement("p");
+            para.innerText=data.para;
+            let button=document.createElement("button");
+            button.innerText="add to cart";
+            button.onclick=function(){
+               localStorageItemList.push(data);
+               localStorage.setItem("localStorageItemList",JSON.stringify(localStorageItemList))
+               alert("item added to the cart successfully")
+            }
+            let div=document.createElement("div");
+            div.append(image,title,category,price,para,button);
+            beveragesAndDessertsContainer.append(div);
+        });
+    }
+     init();
+</script>
+<script>
+     let temp= window.
+       console.log("asdds",temp)
+    function fun1(a){
+      
+        if(a==="1"){
+       window.scrollTo(0,0)
+        }
+        else if(a==="2"){
+       window.scrollTo(0,1070)
+        }
+        else if(a==="3"){
+       window.scrollTo(0,2145)
+        }
+        else if(a==="4"){
+       window.scrollTo(0,3220)
+        }
+        else if(a==="5"){
+       window.scrollTo(0,4290)
+        }
+        else if(a==="6"){
+       window.scrollTo(0,5365)
+        }
+        else if(a==="7"){
+       window.scrollTo(0,6430)
+        }
+        else if(a==="8"){
+       window.scrollTo(0,7500)
+        }
+       
+    }
+</script>
+<script type="module">
+    import {footer,navbar}from "../common.js"
+var footery=document.getElementById("footer")
+footery.innerHTML=footer()
+var navy=document.getElementById("navbar")
+navy.innerHTML=navbar()
+</script>

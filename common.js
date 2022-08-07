@@ -69,7 +69,7 @@ function navbar(){
     <div id="nav">
         <div id="firstHalf">
             <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg">
-            <p>Menu</p>
+            <a href="./menupage.html"><p>Menu</p></a>
             <p>Deals</p>
         </div>
         <div id="secondHalf">
@@ -78,7 +78,10 @@ function navbar(){
                 <h4>Sign In</h4>
             </div>    
             <p id="rupee"> </p>
+            <a href="./cart.html">
             <img class="bucket" src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg">
+            </a>
+            
         </div>
     </div>`
 }

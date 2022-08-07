@@ -97,6 +97,7 @@ pay.innerText=`Ready to Checkout`
 pay.setAttribute("id","pay")
 var sum=document.createElement("p");
 sum.innerText=`Total :${totally()}`
+localStorage.setItem("sum",JSON.stringify(totally()))
 
 
 var apply=document.createElement("div")
@@ -110,7 +111,7 @@ Apcoupon.addEventListener("click",function(){
     Apcoupon.innerText="Applied!"
     alert("you got a 100 Rs. off")
     sum.innerText=`Total :${totally()-100 } \n Succesfully coupon applied`
-    
+    localStorage.setItem("sum",JSON.stringify(totally()-100))
 })
 apply.append(coupon,Apcoupon)
 

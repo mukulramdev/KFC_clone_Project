@@ -1,4 +1,8 @@
 /* __Nav__ */
+a{
+    text-decoration: none;
+    color: black;
+}
 #nav{
     display: flex;
     justify-content: space-around;
