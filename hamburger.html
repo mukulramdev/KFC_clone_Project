@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    #nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            background: rgb(245, 238, 238);
+            border: none;
+            border-bottom: 1px solid rgb(206, 186, 186);
+            padding-left: 10px;
+            padding-right: 10px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+    #nav>a>img{
+        width: 15px;
+    }   
+
+    #third{
+            width: 50px;
+            position: relative;
+            cursor: pointer;
+            background: transparent;
+            margin-top: -50px;
+        }
+        #third span{
+            position: absolute;
+            width:12px;
+            height: 40px;
+            left:50%;
+            /* transform: translate(-50%); */
+            background: #cc1010;
+        }
+        #third span:nth-child(1){
+            left:0;
+            color: black;
+        }
+        #third span:nth-child(3){
+            left:100%;
+            color: black;
+        }
+        .bucket{
+            height: 50px;
+            margin-left: -30px;
+        }
+        #firstH1{
+            margin-top: 65px;
+            margin-left: 20px;
+        }
+        h1{
+            margin-left: 20px;
+        }
+        
+        
+        #sign{
+            position: relative;
+            margin-left: 15px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        pre{
+            margin-left: 10px;
+            display: inline-block;
+            position: absolute;
+            top: 4px;
+            color: gray;
+        }
+        #boxContainer{
+            display: block;
+            margin: auto;
+            width: 95%;
+        }
+       
+       #boxMenu,#boxDeals{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background: rgba(224, 208, 208, 0.192);
+        margin-bottom: 20px;
+       }
+       #boxMenu h3,#boxDeals h3{
+        margin-left: 10px;
+       }
+       #boxMenu>#image, #boxDeals>#image{
+        width: 100px;
+       }
+       #image>img{
+        width: 100%;
+        object-fit: cover;
+       }
+
+
+       #foot{
+        display:block;
+        background: rgba(224, 208, 208, 0.192);
+        width: 95%;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       }
+       #foot a{
+        text-decoration: none;
+        color: gray;
+        cursor: pointer;
+        margin-left: 10px;
+        display: block;
+        margin-bottom: 25px;
+       }
+       #foot a:hover{
+        color: black;
+       }
+</style>
+<body>
+    <div id="nav">
+        <a href=""><img src="https://imgs.search.brave.com/_2ZxdNw7X9YV3W1jBjPjgV8NIHHr-9qGYAU95W9YYUQ/rs:fit:980:980:1/g:ce/aHR0cHM6Ly9jZG4u/b25saW5ld2ViZm9u/dHMuY29tL3N2Zy9p/bWdfMzEwNTgzLnBu/Zw"></a>
+        <div id="third">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img class="bucket" src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg">
+    </div>
+    <h1 id="firstH1">LET'S GET</h1>
+    <h1>COOKIN'</h1>
+
+    <div id="sign">
+        <img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg">
+        <pre>Sign in / Sign up &#8594;</pre> 
+    </div>
+    
+
+    <div id="boxContainer">
+        <div id="boxMenu">
+            <h3>MENU</h3>
+            <div id="image"><img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K540.jpg?ver=18.04"></div>
+        </div>
+
+        <div id="boxDeals">
+            <h3>DEALS</h3>
+            <div id="image"><img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K146.jpg?ver=18.04"></div>
+        </div>
+    </div>
+
+
+    <div id="foot">
+        <a href="#">Get Help</a>
+        <a href="#">Contact Us</a>
+        <a href="#">KFC Feedback</a>
+        <a href="#">Privacy Policy</a>
+    </div>
+</body>
+</html>
