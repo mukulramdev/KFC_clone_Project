@@ -1,0 +1,243 @@
+/* header style */
+
+
+/* ...................................................Medium Style ........................................................................*/
+#startOrder {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+#startOrder h4 {
+    font-family: "National 2 Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: auto 15px auto auto;
+}
+
+#startOrder button {
+    background-color: #e4002b;
+    ;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 14px;
+    border-radius: 35px;
+    margin-left: 25px;
+    border: none;
+
+}
+
+#dealsOffers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    width: 100%;
+    height: 280px;
+
+    background: url("https://online.kfc.co.in/static/media/offer_deals_banner.777f20e1.svg");
+    background-repeat: no-repeat;
+
+}
+
+#dealsOffers>p {
+    font-family: "National 2 Condensed";
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 78px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+#national {
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    margin-left: 15%;
+    border-radius: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#national div img {
+    width: 7%;
+}
+
+#innerNational {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    padding-bottom: 50px;
+    font-weight: bolder;
+
+}
+
+#innerNational>p>a {
+    color: rgb(56, 53, 53);
+    font-size: 17px;
+}
+
+#deals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    max-width: fit-content;
+    gap: 15px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+
+#deals>div {
+    border-radius: 15px;
+    text-align: center;
+
+    height: 370px;
+    width: 290px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+#deals>div:nth-child(1) {
+    background: url("https://online.kfc.co.in/static/media/Native_select%20a%20kfc_grey%20image.6e97ff02.svg");
+    background-size: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    
+    border-radius: 15px;
+    
+}
+
+#deals>div:nth-child(1)>h3 {
+    color: white;
+    font-size: 25px;
+    margin: 150px 5px 20px 5px;
+}
+
+#deals>div:nth-child(1) button {
+    color: white;
+    background: none;
+    border: 1px solid white;
+    margin-top: 25px;
+    border-radius: 25px;
+    padding: 15px 40px;
+}
+
+#deals>div:nth-child(1) button:hover {
+    background-color: white;
+    color: black;
+}
+
+#deals>div:nth-child(2) {
+    background-color: #E4002b;
+    font-size: 25px;
+}
+
+#deals>div:nth-child(2) h3 {
+    color: white;
+    text-align: center;
+    margin: 30px 10px;
+}
+
+#deals>div:nth-child(2) button {
+    background-color: #E4002b;
+    color: whitesmoke;
+    font-size: 15px;
+    border: 1px solid whitesmoke;
+    padding: 10px 40px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+#deals>div:nth-child(2) button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#deals div img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+#deals div h4 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #E4002b;
+    margin: 0px 0px 5px 5px;
+
+}
+
+#deals div p {
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+}
+
+#deals>div div {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    font-weight: bolder;
+    margin: 5px 20px 20px 10px;
+}
+
+#deals>div div button {
+    height: 42px;
+    width: 120px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    font-size: 14px;
+
+}
+
+#deals>div div button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#deals>div div p {
+    text-decoration: underline;
+}
+
+#deals>div div p:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+
+/* multimedia screen 1050 px maximum */
+@media only screen and (max-width:1000px) {
+    #deals {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #deals {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
