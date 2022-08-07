@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+    font-weight:bold;
+}
+
+/* __Nav__ */
+
+
+/*  The black div under the navbar */
+
+#blackDiv{
+    margin-top: 100px;
+    background: black;
+    height: 70px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+    font-weight:bold;
+}
+#blackDiv button{
+    width: 140px;
+    color: #fff;
+    border: none;
+    background: red;
+    height: 40px;
+    border-radius: 12rem;
+}
+#thirdDiv{
+    height: 140px;
+    background: #9797971c;
+    display: flex;
+    flex-direction: row;
+}
+#third{
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    margin-left:200px;
+}
+#third span{
+    position: absolute;
+    width:7px;
+    height: 20px;
+    left:50%;
+    /* transform: translate(-50%); */
+    background: #cc1010;
+}
+#third span:nth-child(1){
+    left:0;
+    color: black;
+}
+#third span:nth-child(3){
+    left:100%;
+    color: black;
+}
+#thirdDiv>h1{
+    margin-left: -40px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+    font-weight:bold;
+}  
+
+/*  Main Content  */
+#main{
+    margin: 20px 150px;
+    height: 60px;
+    display: flex;
+}
+#main .mainHead{
+   flex:0 0 1;
+   margin-right: 20px;
+}
+#line{
+   width: 60%;
+   position: relative;
+   
+}
+#line span{
+    position: absolute;
+    top:18px;
+    width: 110%;
+    height: 1px;
+    background: #b39f9f;
+    padding-left: 2px;
+}
+/*   Cards  */
+#cards{
+    margin: 20px 150px;
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+#cards div{
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background: #d8d8d835;
+}
+#cards div>img{
+    width: 100%;
+}
+#cards div>h4{
+    text-align: center;
+    margin:15px 0;
+}
+#cards div:last-child h4{
+    padding-top: 22px;
+}
+/* 2nd last div */
+#slideDiv{
+    background: black;
+    height: 170px;
+}
+
+#four{
+    width: 55px;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    margin-left:200px;
+}
+#four span{
+    position: absolute;
+    width:15px;
+    height: 45px;
+    left:50%;
+    background: #cc1010;
+}
+#four span:nth-child(1){
+    left:0;
+    color: black;
+}
+#four span:nth-child(3){
+    left:100%;
+    color: black;
+}
+
+#slideShow2{
+    margin-left: 200px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    margin-bottom: 100px;
+}
+#slideShow2 a:last-child{
+    padding-right:200px ;
+    text-decoration: none;
+    color: white;
+}
+
+/* lower Cards */
+#bigCard{
+    padding-left: 200px;
+    display: flex;
+    gap: 30px;
+    width:1500px;
+    background: rgb(184, 95, 95);
+    position: relative;
+}
+#product-card{
+    flex: 0 0 auto;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+#product-card img{
+    width: 100%;
+}
+#product-card h2{
+    text-align: center;
+    color: #cc1010;
+    font-size:32px;
+}
+#product-card p{
+    text-align: center;
+    color: rgb(102, 78, 78);
+    padding:10px 10px;
+}
+#low{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#low a{
+    color: black;
+}
+#low button{
+    border: 1px solid rgb(14, 14, 14);
+    width: 120px;
+    height: 40px;
+    border-radius: 12rem;
+}
+#product{
+    position: relative;
+    overflow:hidden;
+    
+}
+#product-container{
+    padding-left: 200px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    background: black;
+    padding-bottom: 10px;
+}
+#product-container::-webkit-scrollbar{
+    display: none;
+}
+#pre-btn{
+    border:none;
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: black;
+    
+}
+#nxt-btn{
+    border:none;
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: linear-gradient(90deg,rgba(255,255,255,0)0%,rgb(68, 58, 58));
+}
+#pre-btn>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    background: rgba(167, 165, 165, 0.692);
+    object-fit: cover;
+}
+#nxt-btn>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 120px;
+    cursor: pointer;
+    z-index: 10;
+    background: rgba(167, 165, 165, 0.692);
+    object-fit: cover;
+}
+
+
+
+/* Footer */
+
+
+
+/* Footer Complete */
+
+@media only screen and (max-width: 570px){
+
+.toggle-btn{
+width: 20px;
+height: 10px;
+position: relative;
+cursor: pointer;
+}
+.toggle-btn span{
+position: absolute;
+width: 100%;
+height: 2px;
+top: 50%;
+transform: translate(-50%);
+background: #979797;
+}
+.toggle-btn span:nth-child(1){
+top:0;
+}
+.toggle-btn span:nth-child(3){
+top:100%;
+}
+
+
+/* black Div */
+#blackDiv{
+margin-top: 0px;
+display: block;
+height: 80px;
+}
+#blackDiv p{
+text-align: center;
+font-size: 14px;
+}
+#blackDiv button{
+display: block;
+margin: auto;
+margin-top: 10px;
+}
+
+#thirdDiv h1{
+padding-left: 10px;
+}
+#main{
+    margin: 10px 30px;
+    height: 50px;
+    display: flex;
+    font-size: 16px;
+}
+/*   Cards  */
+
+#cards{
+    margin: 20px 30px;
+    min-height: 70px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+/*   Slider   */
+
+#slideShow2{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+}
+#slideShow2 a:last-child{
+    padding-right:20px;
+} 
+
+/* Product Container */
+#pre-btn{
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    left:10%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: transparent
+}
+#nxt-btn{
+    right: -10%;
+}
+#product-container{
+    margin-left: -150px;
+}
+
+}
+
+
+@media only screen and (max-width: 470px){
+#slideShow2{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+#slideShow2 a:last-child{
+    padding-right:10px;
+} 
+}
