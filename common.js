@@ -75,7 +75,8 @@ function navbar(){
         <div id="secondHalf">
             <div>
                 <img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg">
-                <h4>Sign In</h4>
+                
+                <a href="./signup.html"><h4>Sign In</h4></a>
             </div>    
             <p id="rupee"> </p>
             <a href="./cart.html">
