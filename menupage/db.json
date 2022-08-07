@@ -1,0 +1,361 @@
+{
+    "foodData":{
+        "hotDeals":[
+            {
+              "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000130.jpg?ver=18.04",
+              "title":"Ultimate Savings Bucket",
+              "category":" Non veg Serves 2-3",
+              "price":"628.57",
+              "para":"Save with this bucket with 4 pieces Hot & Crispy, 6 pieces Hot Wings, 4 pieces Boneless Strips, 3 Pepsi and 2 dips (serves 2-3)"
+            },
+            
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-120180.jpg?ver=18.04",
+                "title":"Big 8",
+                "category":"Non veg Serves 2",
+                "price":"548.57",
+                "para":"Save upto 31% with this bucket that has 4 pieces of Hot & Crispy and 4 pieces of Smoky Red (serves 2)"
+            },
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000132.jpg?ver=18.04",
+                "title":"5 Leg piece + 2 Dips + 2 Pepsi",
+                "category":"Non veg Serves 2",
+                "price":"528.57",
+                "para":"Your favorite chicken leg pieces in a bucket. 5 pieces served with 2 dips and 2 Pepsi (serves 2)"
+            },
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000153.jpg?ver=18.04",
+                "title":"Strips & Rice Combo",
+                "category":"Non veg",
+                "price":"348.57",
+                "para":"Special combo meal with 4 strips & aromatic Biryani Rice with flavourful Gravy, Dip and a Regular Pepsi"
+            },
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000149.jpg?ver=18.04",
+                "title":"Solo Feast",
+                "category":"Non veg",
+                "price":"308.57",
+                "para":"Relish a feast of KFC favorites packed with 1 H&C, 2 Strips,2 Hot Wings, Buttered Bun,spicy signature nashville dip & 1 regular pepsi"
+            },
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000155.jpg?ver=18.04",
+                "title":"Mega Feast",
+                "category":"Non veg",
+                "price":"599.05",
+                "para":"Relish a big size feast with KFC favorites & new launches- 2 pc H&C,2 pc Smoky Grilled, 1 buttered bun, 1gravy, med.fries & pepsi"
+            }
+        ],
+        "chickenBuckets":[
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000028.jpg?ver=18.04",
+                "title":"Classic Chicken Biryani Bucket -Large",
+                "category":" Non veg Serves 2",
+                "price":"419.05",
+                "para":"New flavorful Biryani rice with 2 Hot & Crispy chicken pieces served with a spicy gravy (serves 2)"
+            },
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-120180.jpg?ver=18.04",
+                "title":"Big 8",
+                "category":"Non veg Serves 2",
+                "price":"548.57",
+                "para":"Save upto 31% with this bucket that has 4 pieces of Hot & Crispy and 4 pieces of Smoky Red (serves 2)"
+            },
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000132.jpg?ver=18.04",
+                "title":"5 Leg piece + 2 Dips + 2 Pepsi",
+                "category":"Non veg Serves 2",
+                "price":"528.57",
+                "para":"Your favorite chicken leg pieces in a bucket. 5 pieces served with 2 dips and 2 Pepsi (serves 2)"
+            },
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000153.jpg?ver=18.04",
+                "title":"Strips & Rice Combo",
+                "category":"Non veg",
+                "price":"348.57",
+                "para":"Special combo meal with 4 strips & aromatic Biryani Rice with flavourful Gravy, Dip and a Regular Pepsi"
+            },
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000149.jpg?ver=18.04",
+                "title":"Solo Feast",
+                "category":"Non veg",
+                "price":"308.57",
+                "para":"Relish a feast of KFC favorites packed with 1 H&C, 2 Strips,2 Hot Wings, Buttered Bun,spicy signature nashville dip & 1 regular pepsi"
+            },
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000155.jpg?ver=18.04",
+                "title":"Mega Feast",
+                "category":"Non veg",
+                "price":"599.05",
+                "para":"Relish a big size feast with KFC favorites & new launches- 2 pc H&C,2 pc Smoky Grilled, 1 buttered bun, 1gravy, med.fries & pepsi"
+            }
+        ],
+        "hotLaunches":[
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000141.jpg?ver=18.04",
+                "title":"Popcorn Nachos Meal",
+                "category":"Non veg",
+                "price":"599.05",
+                "para":"Relish a big size feast with KFC favorites & new launches- 2 pc H&C,2 pc Smoky Grilled, 1 buttered bun, 1gravy, med.fries & pepsi"
+            },
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000142.jpg?ver=18.04",
+                "title":"Popcorn nachos strips Meal",
+                "category":"Non veg",
+                "price":"400.05",
+                "para":"Relish a big size feast with KFC favorites & new launches- 2 pc H&C,2 pc Smoky Grilled, 1 buttered bun, 1gravy, med.fries & pepsi"
+            },
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000137.jpg?ver=18.04",
+                "title":"Popcorn Nachos",
+                "category":"Non veg",
+                "price":"400.05",
+                "para":"Crunchy popcorn & 2 delicious sauces paired with masala Doritos. 2 ka crunch, in 1 munch!"
+            },
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000147.jpg?ver=18.04",
+                "title":"Spicy Mix Fries -Large",
+                "category":"Non veg",
+                "price":"348.57",
+                "para":"Special combo meal with 4 strips & aromatic Biryani Rice with flavourful Gravy, Dip and a Regular Pepsi"
+            },
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000143.jpg?ver=18.04",
+                "title":"Buttered Bun",
+                "category":"Non veg",
+                "price":"308.57",
+                "para":"Relish a feast of KFC favorites packed with 1 H&C, 2 Strips,2 Hot Wings, Buttered Bun,spicy signature nashville dip & 1 regular pepsi"
+            },
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000144.jpg?ver=18.04",
+                "title":"Mega Feast",
+                "category":"Non veg",
+                "price":"599.05",
+                "para":"Relish a big size feast with KFC favorites & new launches- 2 pc H&C,2 pc Smoky Grilled, 1 buttered bun, 1gravy, med.fries & pepsi"
+            }
+
+        ],
+        "boxMeals":[
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000042.jpg?ver=18.04",
+                "title":"Ultimate Savings Bucket",
+                "category":" Non veg Serves 2-3",
+                "price":"628.57",
+                "para":"Save with this bucket with 4 pieces Hot & Crispy, 6 pieces Hot Wings, 4 pieces Boneless Strips, 3 Pepsi and 2 dips (serves 2-3)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000043.jpg?ver=18.04",
+                  "title":"Big 8",
+                  "category":"Non veg Serves 2",
+                  "price":"548.57",
+                  "para":"Save upto 31% with this bucket that has 4 pieces of Hot & Crispy and 4 pieces of Smoky Red (serves 2)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-404057.jpg?ver=18.04",
+                  "title":"5 Leg piece + 2 Dips + 2 Pepsi",
+                  "category":"Non veg Serves 2",
+                  "price":"528.57",
+                  "para":"Your favorite chicken leg pieces in a bucket. 5 pieces served with 2 dips and 2 Pepsi (serves 2)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000153.jpg?ver=18.04",
+                  "title":"Strips & Rice Combo",
+                  "category":"Non veg",
+                  "price":"348.57",
+                  "para":"Special combo meal with 4 strips & aromatic Biryani Rice with flavourful Gravy, Dip and a Regular Pepsi"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-404060.jpg?ver=18.04",
+                  "title":"Solo Feast",
+                  "category":"Non veg",
+                  "price":"308.57",
+                  "para":"Relish a feast of KFC favorites packed with 1 H&C, 2 Strips,2 Hot Wings, Buttered Bun,spicy signature nashville dip & 1 regular pepsi"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-404059.jpg?ver=18.04",
+                  "title":"Mega Feast",
+                  "category":"Non veg",
+                  "price":"599.05",
+                  "para":"Relish a big size feast with KFC favorites & new launches- 2 pc H&C,2 pc Smoky Grilled, 1 buttered bun, 1gravy, med.fries & pepsi"
+              }
+        ],
+        "burgers":[
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-404085.jpg?ver=18.04",
+                "title":"Ultimate Savings Bucket",
+                "category":" Non veg Serves 2-3",
+                "price":"628.57",
+                "para":"Save with this bucket with 4 pieces Hot & Crispy, 6 pieces Hot Wings, 4 pieces Boneless Strips, 3 Pepsi and 2 dips (serves 2-3)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-404086.jpg?ver=18.04",
+                  "title":"Big 8",
+                  "category":"Non veg Serves 2",
+                  "price":"548.57",
+                  "para":"Save upto 31% with this bucket that has 4 pieces of Hot & Crispy and 4 pieces of Smoky Red (serves 2)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-404087.jpg?ver=18.04",
+                  "title":"5 Leg piece + 2 Dips + 2 Pepsi",
+                  "category":"Non veg Serves 2",
+                  "price":"528.57",
+                  "para":"Your favorite chicken leg pieces in a bucket. 5 pieces served with 2 dips and 2 Pepsi (serves 2)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-404089D.jpg?ver=18.04",
+                  "title":"Strips & Rice Combo",
+                  "category":"Non veg",
+                  "price":"348.57",
+                  "para":"Special combo meal with 4 strips & aromatic Biryani Rice with flavourful Gravy, Dip and a Regular Pepsi"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-404090D.jpg?ver=18.04",
+                  "title":"Solo Feast",
+                  "category":"Non veg",
+                  "price":"308.57",
+                  "para":"Relish a feast of KFC favorites packed with 1 H&C, 2 Strips,2 Hot Wings, Buttered Bun,spicy signature nashville dip & 1 regular pepsi"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-404141.jpg?ver=18.04",
+                  "title":"Mega Feast",
+                  "category":"Non veg",
+                  "price":"599.05",
+                  "para":"Relish a big size feast with KFC favorites & new launches- 2 pc H&C,2 pc Smoky Grilled, 1 buttered bun, 1gravy, med.fries & pepsi"
+              }
+        ],
+        "biryaniBuckets":[
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000038.jpg?ver=18.04",
+                "title":"Ultimate Savings Bucket",
+                "category":" Non veg Serves 2-3",
+                "price":"628.57",
+                "para":"Save with this bucket with 4 pieces Hot & Crispy, 6 pieces Hot Wings, 4 pieces Boneless Strips, 3 Pepsi and 2 dips (serves 2-3)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000039.jpg?ver=18.04",
+                  "title":"Big 8",
+                  "category":"Non veg Serves 2",
+                  "price":"₹548.57",
+                  "para":"Save upto 31% with this bucket that has 4 pieces of Hot & Crispy and 4 pieces of Smoky Red (serves 2)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000024.jpg?ver=18.04",
+                  "title":"5 Leg piece + 2 Dips + 2 Pepsi",
+                  "category":"Non veg Serves 2",
+                  "price":"528.57",
+                  "para":"Your favorite chicken leg pieces in a bucket. 5 pieces served with 2 dips and 2 Pepsi (serves 2)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000025.jpg?ver=18.04",
+                  "title":"Strips & Rice Combo",
+                  "category":"Non veg",
+                  "price":"348.57",
+                  "para":"Special combo meal with 4 strips & aromatic Biryani Rice with flavourful Gravy, Dip and a Regular Pepsi"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000027.jpg?ver=18.04",
+                  "title":"Solo Feast",
+                  "category":"Non veg",
+                  "price":"308.57",
+                  "para":"Relish a feast of KFC favorites packed with 1 H&C, 2 Strips,2 Hot Wings, Buttered Bun,spicy signature nashville dip & 1 regular pepsi"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000029.jpg?ver=18.04",
+                  "title":"Mega Feast",
+                  "category":"Non veg",
+                  "price":"599.05",
+                  "para":"Relish a big size feast with KFC favorites & new launches- 2 pc H&C,2 pc Smoky Grilled, 1 buttered bun, 1gravy, med.fries & pepsi"
+              }
+        ],
+        "Snack":[
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-404044.jpg?ver=18.04",
+                "title":"Ultimate Savings Bucket",
+                "category":" Non veg Serves 2-3",
+                "price":"628.57",
+                "para":"Save with this bucket with 4 pieces Hot & Crispy, 6 pieces Hot Wings, 4 pieces Boneless Strips, 3 Pepsi and 2 dips (serves 2-3)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-404046.jpg?ver=18.04",
+                  "title":"Big 8",
+                  "category":"Non veg Serves 2",
+                  "price":"548.57",
+                  "para":"Save upto 31% with this bucket that has 4 pieces of Hot & Crispy and 4 pieces of Smoky Red (serves 2)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-404045.jpg?ver=18.04",
+                  "title":"5 Leg piece + 2 Dips + 2 Pepsi",
+                  "category":"Non veg Serves 2",
+                  "price":"528.57",
+                  "para":"Your favorite chicken leg pieces in a bucket. 5 pieces served with 2 dips and 2 Pepsi (serves 2)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-120089.jpg?ver=18.04",
+                  "title":"Strips & Rice Combo",
+                  "category":"Non veg",
+                  "price":"348.57",
+                  "para":"Special combo meal with 4 strips & aromatic Biryani Rice with flavourful Gravy, Dip and a Regular Pepsi"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-120085.jpg?ver=18.04",
+                  "title":"Solo Feast",
+                  "category":"Non veg",
+                  "price":"308.57",
+                  "para":"Relish a feast of KFC favorites packed with 1 H&C, 2 Strips,2 Hot Wings, Buttered Bun,spicy signature nashville dip & 1 regular pepsi"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-100008.jpg?ver=18.04",
+                  "title":"Mega Feast",
+                  "category":"Non veg",
+                  "price":"599.05",
+                  "para":"Relish a big size feast with KFC favorites & new launches- 2 pc H&C,2 pc Smoky Grilled, 1 buttered bun, 1gravy, med.fries & pepsi"
+              }
+        ],
+        "beveragesAndDesserts":[
+            {
+                "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-160065.jpg?ver=18.04",
+                "title":"Choco Mud Pie",
+                "category":" Non veg Serves 2-3",
+                "price":"628.57",
+                "para":"Save with this bucket with 4 pieces Hot & Crispy, 6 pieces Hot Wings, 4 pieces Boneless Strips, 3 Pepsi and 2 dips (serves 2-3)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-160067.jpg?ver=18.04",
+                  "title":"Coffee Mousse Cake",
+                  "category":"veg Serves 2",
+                  "price":"548.57",
+                  "para":"Save upto 31% with this bucket that has 4 pieces of Hot & Crispy and 4 pieces of Smoky Red (serves 2)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-200011.jpg?ver=18.04",
+                  "title":"Pepsi Large",
+                  "category":"veg Serves 2",
+                  "price":"528.57",
+                  "para":"Your favorite chicken leg pieces in a bucket. 5 pieces served with 2 dips and 2 Pepsi (serves 2)"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-200015.jpg?ver=18.04",
+                  "title":"Mirinda Large",
+                  "category":"veg",
+                  "price":"348.57",
+                  "para":"Special combo meal with 4 strips & aromatic Biryani Rice with flavourful Gravy, Dip and a Regular Pepsi"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-200013.jpg?ver=18.04",
+                  "title":"7UP Large",
+                  "category":"veg",
+                  "price":"308.57",
+                  "para":"Relish a feast of KFC favorites packed with 1 H&C, 2 Strips, Buttered Bun,spicy signature nashville dip & 1 regular pepsi"
+              },
+              {
+                  "image":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-210002.jpg?ver=18.04",
+                  "title":"Mojito",
+                  "category":"veg",
+                  "price":"599.05",
+                  "para":"Relish a big size feast with KFC favorites & new launches- 2 pc H&C,2 pc Smoky Grilled, 1 buttered bun, 1gravy, med.fries & pepsi"
+              }
+             
+        ]
+
+    }
+    
+}
