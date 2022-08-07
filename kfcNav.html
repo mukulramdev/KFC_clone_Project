@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KFC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <style>
         *{
             margin: 0;
@@ -14,6 +15,7 @@
             font-stretch: extra-condensed;
             font-weight:bold;
         }
+        
         /* __Nav__ */
         #nav{
             display: flex;
@@ -303,7 +305,7 @@
             cursor: pointer;
             z-index: 10;
             background: rgba(167, 165, 165, 0.692);
-            object-fit: contain;
+            object-fit: cover;
         }
         #nxt-btn>img{
             width: 40px;
@@ -314,11 +316,293 @@
             cursor: pointer;
             z-index: 10;
             background: rgba(167, 165, 165, 0.692);
-            object-fit: contain;
+            object-fit: cover;
         }
+       
+
+
+/* Footer */
+
+footer {
+    margin-top: 30px;
+}
+
+.container {
+    max-width: 60%;
+    background-color: #202124;
+    margin-left: 5%;
+    display: flex;
+    height: 220px;
+}
+
+.kfc-logo {
+    max-width: 10%;
+    margin-left: 7%;
+    margin-top: 1%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #202124;
+    width: 101%;
+    margin-left: -0.5%;
+    padding: 70px 0;
+    display: flex;
+    color: aliceblue;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 px;
+}
+
+.footer-col h4 {
+    font-size: 14px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: -10px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 40px;
+}
+
+.footer-col h4 ::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    
+    height: 2px;
+    box-sizing: border-box;
+    width: px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 13px;
+    /* text-transform: capitalize; */
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color:white;
+}
+
+.playstore {
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.appstore {
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.foot-col-sol .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+
+}
+
+.foot-col-sol .social-links a:hover {
+    color: white
+}
+
+.foot-col-sol {
+    background-color: #202124;
+    width: 101%;
+    margin-left: -0.5%;
+    /* border: 1px solid red; */
+    margin-top: -25px;
+}
+
+.social-links {
+    margin-left: 85%;
+}
+
+.fa-solid {
+    color: red;
+    margin-right: 10px;
+}
+
+.footer-col>#underline a {
+    text-decoration: underline;
+}
+
+/* Footer Complete */
+#header-pic{
+    display: none;
+}
+#resNav{
+    display: none;
+}
+@media only screen and (max-width: 570px){
+    #header-pic{
+        display: flex;
+        height:80px;
+    }
+    #header-pic img{
+        width: 100%;
+        object-fit: cover;
+    }
+    #nav{
+        display: none;
+    }
+    #resNav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #fff;
+        z-index: 100;
+        position: sticky;
+        left: 0;
+        top: 0;
+    }
+    .toggle-btn{
+        width: 20px;
+        height: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+   .toggle-btn span{
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        transform: translate(-50%);
+        background: #979797;
+    }
+    .toggle-btn span:nth-child(1){
+        top:0;
+    }
+   .toggle-btn span:nth-child(3){
+        top:100%;
+    }
+
+
+    /* black Div */
+    #blackDiv{
+        margin-top: 0px;
+        display: block;
+        height: 80px;
+    }
+    #blackDiv p{
+        text-align: center;
+        font-size: 14px;
+    }
+    #blackDiv button{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    #thirdDiv h1{
+        padding-left: 10px;
+    }
+    #main{
+            margin: 10px 30px;
+            height: 50px;
+            display: flex;
+            font-size: 16px;
+        }
+    /*   Cards  */
+
+    #cards{
+            margin: 20px 30px;
+            min-height: 70px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+        }
+
+        /*   Slider   */
+
+        #slideShow2{
+            margin-left: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 16px;
+        }
+        #slideShow2 a:last-child{
+            padding-right:20px;
+        } 
+
+        /* Product Container */
+        #pre-btn{
+            width: 40px;
+            height: 100%;
+            position: absolute;
+            left:10%;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            background: transparent
+        }
+        #nxt-btn{
+            right: -10%;
+        }
+        #product-container{
+            margin-left: -150px;
+        }
+
+}
+
+
+@media only screen and (max-width: 470px){
+    #slideShow2{
+            margin-left: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 14px;
+        }
+        #slideShow2 a:last-child{
+            padding-right:10px;
+        } 
+}
+
     </style>
 </head>
 <body>
+    <div id="header-pic"><img src="https://images.ctfassets.net/wtodlh47qxpt/7aV9O0UN4Qq2GY2RBpsGNj/8e844fa7f19eb224b01ea6db475c8f50/FREE_ZINGER_375x121px.jpg"></div>
+   
+    <div id="resNav">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg">
+        
+        <img class="bucket" src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg">
+    
+    </div>
+
     <div id="nav">
         <div id="firstHalf">
             <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg">
@@ -452,22 +736,13 @@
                 </div>
         </div> 
     </div>
+
+    <footer id="footer">
+        
+    </footer>
+    
 </body>
 </html>
 
-<script>
-    const productContainers=[...document.querySelectorAll('#product-container')];
-    const nxtBtn=[...document.querySelectorAll('#nxt-btn')];
-    const preBtn=[...document.querySelectorAll('#pre-btn')];
-
-    productContainers.forEach((item,i)=>{
-        let containerDimensions=item.getBoundingClientRect();
-        let containerWidth=containerDimensions.width;
-         nxtBtn[i].addEventListener('click',()=>{
-            item.scrollLeft+=containerWidth;
-         })
-         preBtn[i].addEventListener('click',()=>{
-            item.scrollLeft-=containerWidth;
-         })
-    })
-</script>
+<script src="./kfcNav.js"></script>
+<!-- <script type="module"></script> -->
