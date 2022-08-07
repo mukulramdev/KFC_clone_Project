@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC Cart</title>
+   <link  rel="stylesheet" href  ="./footer.css">
+   <link rel="stylesheet" href="./navbar.css">
+    <link rel="icon"href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGZh6XnDnZCBobN4ZpQu5igK5YYhNsDxQm0Q&usqp=CAU" type="image/icon type">
+    <style>
+        #coupon{
+            box-shadow:2px 2px 10px gray;
+            border-radius: 15px;
+            margin-left: 13%;
+        }
+        #intro,#cont2,#cont1{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+         #cont1{ 
+            display: flex;
+            margin-top:2% ;
+            margin-bottom: 4%;
+            
+        }
+        #cont2{
+            
+            display: flex;
+            justify-content: space-between;
+        }
+        #cont2>div{
+            width:40%
+        }
+        button{
+            margin: 2%;
+            background-color: white;
+            height: 40px;
+            width: 38%;
+            border-radius: 50px;
+            font-size: large;
+        }
+        button:hover{
+            background-color: rgb(50, 45, 45);
+            color: white;
+            cursor: pointer;
+        }
+        h1{
+            margin-top: 0%;
+            font-weight: 800;
+        }
+        #apply{
+display: flex;
+justify-content: space-between;
+background-color: #f2f2fa;
+align-items: center;
+padding: 2%;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        #pay{
+            width: 250px;
+            background-color: red;
+            border:none;
+        }
+        
+       tr{
+        background-color: #f2f2fa;
+       column-gap: 40px;
+       /* row-gap: 30px; */
+        }
+        tr>td{
+            width: 175px;
+            height:80px;
+            text-align: center;
+            
+        }
+        td>img{
+            
+            width: 175px;
+            margin-bottom: 0%;
+        }
+        td>button{
+            width: 110px;
+        }
+        /* media */
+        @media only screen and (max-width: 600px) {
+  #cont1{
+    width:400px; 
+  }
+  #cont2{
+            
+            display: flex;
+            flex-wrap: wrap;
+        }
+    button{
+            width:40%;
+        }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div id="intro">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg==" alt="">
+    <h1>MY CART</h1>
+</div>
+
+<div id="cont1"></div>
+<table id="table">
+    <th>
+        
+    </th>
+    <tbody id="tbody">
+
+    </tbody>
+</table>
+</div>
+
+
+
+<div id="cont2">
+        <div><h2>FAQ</h2>
+            <hr>
+            <a href=""><p>How can I change the information for my credit/debit card or select a different default payment method?</p></a>
+        <hr>
+        <a href=""><p>What to expect for delivery?</p></a>
+        <hr>
+        <a href=""><p>How do I change or cancel my pickup order once I’ve placed my order?</p></a>
+        <hr>
+        <button>View All FAQ</button>      
+        
+        
+        </div>
+        <div>
+            <h2>Still have a queston</h2>
+            <hr>
+            <button>📞  Call Us</button>
+            <button>✉ Contact Us</button>
+        </div>
+
+
+    </div>
+    <div id="footer"></div>
+    
+    
+</body>
+
+<script src="./cart.js" type="module">
+    
+</script>
+</html>
