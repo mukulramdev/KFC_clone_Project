@@ -327,13 +327,7 @@ padding-left: 10px;
 }
 /*   Cards  */
 
-#cards{
-    margin: 20px 30px;
-    min-height: 70px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px;
-}
+
 
 /*   Slider   */
 
@@ -381,4 +375,26 @@ padding-left: 10px;
 #slideShow2 a:last-child{
     padding-right:10px;
 } 
+}
+
+
+@media only screen and (max-width: 900px){
+
+    #cards{
+        margin: 20px 30px;
+        min-height: 70px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+}
+@media only screen and (max-width: 670px){
+
+    #cards{
+        margin: 20px 30px;
+        min-height: 70px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
 }
