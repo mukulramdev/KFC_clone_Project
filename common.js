@@ -70,7 +70,7 @@ function navbar(){
         <div id="firstHalf">
             <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg">
             <a href="./menupage.html"><p>Menu</p></a>
-            <p>Deals</p>
+            <a href="./deals.html"><p> Deals<p></a>
         </div>
         <div id="secondHalf">
             <div>
