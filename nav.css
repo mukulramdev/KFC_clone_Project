@@ -13,7 +13,7 @@ a{
     top: 0;
     width: 100%;
     background: #fff;
-    z-index: 100;
+    z-index: 50000;
 }
 #nav>div{
     display: flex;
@@ -58,6 +58,7 @@ a{
     @media only screen and (max-width: 570px){
         #nav{
             display: none;
+            
         }
     #header-pic{
     display: flex;
