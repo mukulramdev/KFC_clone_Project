@@ -94,6 +94,9 @@ var elem = document.createElement("hr");
 elem.setAttribute("width", "98%");
 var pay=document.createElement("button");
 pay.innerText=`Ready to Checkout`
+pay.addEventListener("click",function(){
+    window.location.href="./kfcPayment.html"
+})
 pay.setAttribute("id","pay")
 var sum=document.createElement("p");
 sum.innerText=`Total :${totally()}`

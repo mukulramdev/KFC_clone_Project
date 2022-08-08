@@ -301,14 +301,20 @@ input {
                      <div><label>CVV</label>  <input id="mastercard" type="number" /></div>  
                   </div>
                 </div>
-                <button id="pay">Pay</button>
+                <button id="pay">Pay &emsp;<p id="amount"></p></button>
         </div>
     </div>
 </body>
 </html>
 <script src="https://kit.fontawesome.com/e1c0e81e9a.js" crossorigin="anonymous"></script>
 <script>
-    var arr=JSON.parse(localStorage.getItem(arr));
+    var arr=JSON.parse(localStorage.getItem("sum"));
+    document.querySelector("#amount").innerText=arr
+    document.querySelector("#amount").style.display="inline"
+    document.querySelector("#pay").addEventListener("click",function(){
+        alert("Payment Successfully")
+        window.location.href="./kfcLanding.html"
 
+    })
 
 </script>

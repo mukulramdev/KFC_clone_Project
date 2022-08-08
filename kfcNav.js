@@ -13,5 +13,8 @@ const productContainers=[...document.querySelectorAll('#product-container')];
          })
     })
 
+    document.querySelector(".toggle-btn").addEventListener("click",function(){
+      window.location.href="./hamburger.html"
+    })
     // import {footer} from "./footer.js"
     // document.getElementById(footer).innerHTML=footer();
