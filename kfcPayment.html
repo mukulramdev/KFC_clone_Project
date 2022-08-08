@@ -230,7 +230,7 @@ input {
 </head>
 <body>
     <div id="nav">
-        <button>Back to cart</button>
+        <button id="carto">Back to cart</button>
         <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg">
         <div id="navLast">
             <p>Need Help?</p>
@@ -314,6 +314,11 @@ input {
     document.querySelector("#pay").addEventListener("click",function(){
         alert("Payment Successfully")
         window.location.href="./kfcLanding.html"
+
+    })
+    document.querySelector("#carto").addEventListener("click",function(){
+        
+        window.location.href="./cart.html"
 
     })
 
