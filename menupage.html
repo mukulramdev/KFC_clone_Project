@@ -214,7 +214,7 @@
             let para=document.createElement("p");
             para.innerText=data.para;
             let button=document.createElement("button");
-            button.innerText="add to cart";
+            button.innerText="Add to Cart";
             button.onclick=function(){
                localStorageItemList.push(data);
                localStorage.setItem("localStorageItemList",JSON.stringify(localStorageItemList))
