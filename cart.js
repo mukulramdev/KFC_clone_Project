@@ -12,6 +12,9 @@ function demmy(){
     text.innerHTML="YOUR CART IS EMPTY. LET'S START AN ORDER!"
     var buto=document.createElement("button")
     buto.innerHTML="Start Order"
+    buto.addEventListener("click",function(){
+        window.location.href="./menupage.html"
+    })
     buto.style.backgroundColor="red"
     buto.style.color="white"
    
