@@ -18,7 +18,8 @@ It all started with one cook, Colonel Harland Sanders, who created a finger lick
 • CSS<br>
 • JAVASCRIPT<br>
 • DOM<br>
-• Local Storage
+• Local Storage<br>
+• JSON Server
 
 # Project Link
 > - [Netlify](https://kfc-clonning.netlify.app/)
