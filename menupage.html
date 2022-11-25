@@ -196,7 +196,7 @@
     let localStorageItemList=JSON.parse(localStorage.getItem("localStorageItemList"))||[];
     let url="https://kfcapii.herokuapp.com/foodData";
     async function init(){
-        let data=await fetch(" http://localhost:3000/foodData");
+        let data=await fetch("https://kfcapii.herokuapp.com/foodData");
         let res=await data.json();
         console.log(res)
         /*-----hot deal data section-------*/
